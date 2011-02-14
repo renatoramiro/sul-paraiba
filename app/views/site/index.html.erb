@@ -1,0 +1,15 @@
+<h1>Área Comum</h1>
+
+<% if user_signed_in? %>
+	<%= link_to 'Acessar a Área do Usuário', area_usuario_index_path %>
+<% else %>
+	<%= link_to 'Área de Usuário', area_usuario_index_path %> 
+	(Se você ainda não tem conta, registre-se <%= link_to 'aqui', new_user_registration_path %>)
+<% end %>
+ | 
+
+<% if admin_signed_in? %>
+	<%= link_to 'Acessar a Área Administrativa', area_admin_index_path %>
+<% else %>
+	<%= link_to 'Área Administrativa', area_admin_index_path %>
+<% end %>

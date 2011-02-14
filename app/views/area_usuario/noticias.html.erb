@@ -1,0 +1,13 @@
+<h1>Últimas Notícias</h1>
+<%= render :partial => 'user'%>
+<hr style="width: 22%; float: left"/>
+<br />
+<% @noticias.each do |noticia| %>
+<p><b><%= noticia.titulo %></b></p>
+<p><%= raw noticia.texto %></p>
+<p><%= image_tag noticia.material_divulgacao.url%></p>
+<p><%= noticia.autor %> - Criada em <%= noticia.created_at.strftime('%d/%m/%Y') %></p>
+<hr />
+<% end %>
+<br />
+<%= link_to 'Voltar', :controller => 'area_usuario', :action => 'index'%>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @noticia.titulo %>
+</p>
+
+<p>
+  <b>Autor:</b>
+  <%= @noticia.autor %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%= @noticia.texto %>
+</p>
+<p>
+  <b>Material de Divulgação</b><br />
+  <%= image_tag @noticia.material_divulgacao.url(:medium)%><br />
+  <%= link_to 'Exibir imagem tamanho original', @noticia.material_divulgacao.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_noticia_path(@noticia) %> |
+<%= link_to 'Back', noticias_path %>

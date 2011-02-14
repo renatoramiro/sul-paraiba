@@ -1,0 +1,6 @@
+Projeto desenvolvido para o Presbiterio Sul da PB
+
+Desenvolvido com Ruby on Rails 3.0.3
+
+Gems usadas:
+'Paperclip', 'Devise', 'Mysql2', 'CKeditor'

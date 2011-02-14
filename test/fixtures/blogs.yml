@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  titulo: Titulo 1
+  texto: Meu texto
+  autor: autor
+
+two:
+  titulo: Titulo 2
+  texto: Meu texto
+  autor: autor 2
